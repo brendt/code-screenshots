@@ -1,0 +1,7 @@
+{% extends '_partials/layout.twig' %}
+
+{% block slides %}
+    {% for id, slide in slides %}
+        {% include '_partials/slide.twig' with {'slide' : slide} %}
+    {% endfor %}
+{% endblock %}

@@ -1,0 +1,98 @@
+body, html {
+    padding: 0;
+    margin: 0;
+    font-size: 18px;
+}
+
+* {
+}
+
+.slide {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    height: 100vh;
+}
+
+.actions {
+    flex-grow: 0;
+    background-color: rgba(0, 0, 0, .1);
+    padding: 1em;
+    font-family: sans-serif;
+    height: auto;
+}
+
+pre {
+    flex-grow: 2;
+    background-color: #fff;
+    margin: 0;
+    padding: 10vh 10%;
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+pre > code {
+    margin: 0;
+    display: block;
+    padding: 2em;
+    overflow: auto;
+    max-height: 80vh;
+    box-sizing: border-box;
+    border: 2px solid #efefef;
+    border-radius: 3px;
+    position: relative;
+    width:100%;
+}
+
+pre > code + code {
+    margin-top: 3em;
+}
+
+.line {
+    position: absolute;
+    border-right: 2px dashed red;
+    height: 100%;
+    top: 0;
+}
+
+.line1 {
+    left: 40px;
+}
+
+.line2 {
+    left: 85px;
+}
+
+.line3 {
+    left: 344px;
+}
+
+.line4 {
+    left: 355px;
+}
+
+.actions button {
+    margin-left: 1em;
+    background-color: #fff;
+    border: 1px solid #fff;
+    font-size: .8em;
+    cursor: pointer;
+    padding: .8em 1.7em .9em;
+    font-variant: all-petite-caps;
+    border-radius: 3px;
+}
+
+.actions button:hover {
+    background-color: #efefef;
+}
+
+pre:after {
+    display: block;
+    clear: both;
+    content: ' ';
+}

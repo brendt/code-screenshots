@@ -1,0 +1,18 @@
+/:
+    template: slides.twig
+    variables:
+        slides: src/slides/
+    config:
+        order:
+            variable: slides
+            field: id
+            direction: asc
+
+/slides/{id}:
+    template: slide.twig
+    variables:
+        slide: src/slides/
+    config:
+        collection:
+            variable: slide
+            parameter: id

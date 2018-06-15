@@ -1,0 +1,14 @@
+<div class="slide" id="slide-{{ slide.id }}">
+    {{ slide.content|raw }}
+    <div class="actions">
+        {{ slide.id }}:
+
+        <button data-selector="#slide-{{ slide.id }} pre" data-filename="slide-{{ slide.id }}">
+            Full
+        </button>
+
+        <button data-selector="#slide-{{ slide.id }} code" data-filename="slide-{{ slide.id }}">
+            Code
+        </button>
+    </div>
+</div>

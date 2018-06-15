@@ -1,0 +1,9 @@
+vendor/
+.idea
+.DS_Store
+/public/**/*.html
+/public/static/
+/public/resources
+/public/sitemap.xml
+.env
+/data

@@ -1,0 +1,22 @@
+<html>
+<head>
+    {% block head %}
+        <title>Slides</title>
+
+        {{ css.inline('/resources/css/slides.css')|raw }}
+        {{ css.inline('/resources/css/theme_dark.css')|raw }}
+        {{ css.inline('/resources/css/theme_light.css')|raw }}
+    {% endblock %}
+</head>
+<body>
+
+{% block slides %}{% endblock %}
+
+{% block scripts %}
+    {{ js.link('/resources/js/hljs.min.js')|raw }}
+    {{ js.link('/resources/js/html2canvas.min.js')|raw }}
+    {{ js.link('/resources/js/app.js')|raw }}
+{% endblock %}
+
+</body>
+</html>
