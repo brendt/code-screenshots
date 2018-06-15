@@ -4,14 +4,17 @@ body, html {
     font-size: 18px;
 }
 
-* {
+.slide-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    align-items: stretch;
 }
 
 .slide {
+    flex-grow: 1;
     display: flex;
     flex-direction: column;
-    align-items: stretch;
-    height: 100vh;
 }
 
 .actions {
@@ -47,6 +50,26 @@ pre > code {
     border-radius: 3px;
     position: relative;
     width:100%;
+}
+
+.mini {
+    align-items: center;
+}
+
+.mini pre > code {
+    width: auto;
+}
+
+.wide pre {
+    flex-grow: 0;
+    width: auto;
+    padding: 2em;
+}
+
+.mini pre {
+    display: inline-block;
+    flex-grow: 0;
+    padding: 2em;
 }
 
 pre > code + code {

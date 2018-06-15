@@ -1,14 +1,21 @@
-<div class="slide" id="slide-{{ slide.id }}">
-    {{ slide.content|raw }}
+<div class="slide-container">
+    <div class="slide" id="slide-{{ slide.id }}">
+        {{ slide.content|raw }}
+    </div>
+
     <div class="actions">
         {{ slide.id }}:
 
-        <button data-selector="#slide-{{ slide.id }} pre" data-filename="slide-{{ slide.id }}">
+        <button data-selector="#slide-{{ slide.id }}" data-filename="slide-{{ slide.id }}">
             Full
         </button>
 
-        <button data-selector="#slide-{{ slide.id }} code" data-filename="slide-{{ slide.id }}">
-            Code
+        <button data-selector="#slide-{{ slide.id }}" data-filename="slide-{{ slide.id }}" data-class="wide">
+            Wide
+        </button>
+
+        <button data-selector="#slide-{{ slide.id }}" data-filename="slide-{{ slide.id }}" data-class="mini">
+            Mini
         </button>
     </div>
 </div>
