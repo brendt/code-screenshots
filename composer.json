@@ -1,11 +1,16 @@
 {
     "require": {
-        "pageon/stitcher-core": "dev-develop",
-        "mrclay/minify": "^3.0"
+        "pageon/stitcher-core": "dev-master"
     },
     "require-dev": {
         "larapack/dd": "^1.1"
     },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/pageon/stitcher-core"
+        }
+    ],
     "autoload": {
         "psr-4": {
             "Brendt\\Stitcher\\": "src/"

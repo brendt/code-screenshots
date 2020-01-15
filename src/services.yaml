@@ -1,3 +1,0 @@
-services:
-    guideAdapter:
-        class: Brendt\Stitcher\Plugin\Portfolio\GuideAdapter
